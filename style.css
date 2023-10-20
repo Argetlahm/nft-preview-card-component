@@ -1,2 +1,13 @@
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
+
+body {
+    background-color: hsl(217, 54%, 11%);
+}
+
+.content {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(216, 50%, 16%);
+}
