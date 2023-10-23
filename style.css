@@ -35,8 +35,26 @@ img.item-image {
 
 div.info {
     display: flex;
+    justify-content: space-between;
+}
+
+.price-container {
+    display: flex;
 }
 
 .price {
     color: hsl(178, 100%, 50%);
+    /* display: inline; */
+}
+
+.icon-info {
+    position: relative;
+    top: 16px;
+    margin-right: 7px;
+    /* display: inline; */
+}
+
+.time {
+    /* justify-self: flex-end; */
+    /* display: inline; */
 }
