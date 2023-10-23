@@ -4,7 +4,7 @@ function AppContent() {
     return(
             <div class="content">
                 <NftImage class="item-image" />
-                <MainTitle title="Equilibrium #3429" class="item-title" />
+                <MainTitle content="Equilibrium #3429" class="item-title" />
                 <Paragraph content="Our Equilibrium collection promotes balance and calm." class="item-desc" />
                 <div class="info">
                     <Paragraph content="0.041 ETH" class="info price" />
@@ -18,16 +18,16 @@ function AppContent() {
 }
 
 function MainTitle (props) {
-    return <h1>{props.title}</h1>
+    return <h1 class={props.class}>{props.content}</h1>
 }
 
 
 function Paragraph (props) {
-    return <p>{props.content}</p>
+    return <p class={props.class}>{props.content}</p>
 }
 
-function NftImage () {
-    return(<img src="images\image-equilibrium.jpg" alt="nft-image" />)
+function NftImage (props) {
+    return(<img src="images\image-equilibrium.jpg" alt="nft-image" class={props.class} />)
 }
 
 ReactDOM.render(<AppContent />, app)

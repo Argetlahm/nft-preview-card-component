@@ -6,8 +6,37 @@ body {
 }
 
 .content {
-    width: 350px;
+    width: 325px;
     display: flex;
     flex-direction: column;
     background-color: hsl(216, 50%, 16%);
+    color: hsl(0, 0%, 100%);
+    font-family: 'Outfit', sans-serif;
+    padding: 20px;
+}
+
+img.item-image {
+    border-radius: 10px;
+    width: 100%;
+    margin: auto;
+}
+
+.item-title {
+    margin-top: 25px;
+    font-size: 22px;
+    margin-bottom: 0;
+}
+
+.item-desc {
+    font-size: 18px;
+    font-weight: 300;
+    color: hsl(215, 51%, 70%);
+}
+
+div.info {
+    display: flex;
+}
+
+.price {
+    color: hsl(178, 100%, 50%);
 }
