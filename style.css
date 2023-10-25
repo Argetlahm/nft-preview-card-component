@@ -5,6 +5,20 @@ body {
     background-color: hsl(217, 54%, 11%);
 }
 
+hr {
+    width: 100%;
+    border: hsl(215, 32%, 27%) 1px solid;
+}
+
+a {
+    color: hsl(0, 0%, 100%);
+    text-decoration: none;
+}
+
+a:hover {
+    color: hsl(178, 100%, 50%);
+}
+
 .content {
     width: 325px;
     display: flex;
@@ -13,6 +27,7 @@ body {
     color: hsl(0, 0%, 100%);
     font-family: 'Outfit', sans-serif;
     padding: 20px;
+    border-radius: 20px;
 }
 
 img.item-image {
@@ -27,7 +42,7 @@ img.item-image {
     margin-bottom: 0;
 }
 
-.item-desc {
+.item-desc, .time, p.creator {
     font-size: 18px;
     font-weight: 300;
     color: hsl(215, 51%, 70%);
@@ -38,7 +53,7 @@ div.info {
     justify-content: space-between;
 }
 
-.price-container {
+.price-container, .time-container, .creator {
     display: flex;
 }
 
@@ -49,12 +64,29 @@ div.info {
 
 .icon-info {
     position: relative;
-    top: 16px;
+    top: 18px;
     margin-right: 7px;
     /* display: inline; */
 }
 
-.time {
-    /* justify-self: flex-end; */
-    /* display: inline; */
+.time-container .icon-info {
+    top: 21px;
+}
+
+.avatar {
+    --dimension: 32px;
+    position: relative;
+    top: 10px;
+    border: hsl(0, 0%, 100%) solid 1px;
+    border-radius: 50%;
+    width: var(--dimension);
+    height: var(--dimension);
+    margin-right: 17px;
+}
+
+.creator-link {
+    align-self: center;
+    margin-left: 5px;
+    font-size: 18px;
+    
 }

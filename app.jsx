@@ -12,20 +12,34 @@ function AppContent() {
                         <Paragraph content="0.041 ETH" class="info price" />
                     </div>
                     <div class="time-container">
+                        <svg class="icon-info" width="17" height="17" xmlns="http://www.w3.org/2000/svg"><path d="M8.305 2.007a6.667 6.667 0 1 0 0 13.334 6.667 6.667 0 0 0 0-13.334Zm2.667 7.334H8.305a.667.667 0 0 1-.667-.667V6.007a.667.667 0 0 1 1.334 0v2h2a.667.667 0 0 1 0 1.334Z" fill="#8BACD9"/></svg>
                         <Paragraph content="3 days left" class="info time" />
                     </div>
                     
-                    
                 </div>
-                <Paragraph content="Creation of Jules Wyvern" class="info creator" />
+                <hr />
+                <div class="creator">
+                    <ImageComponent src="images/image-avatar.png" class="avatar" />
+                    <Paragraph content="Creation of " class="info creator" />
+                    <LinkComponent class="creator-link" content="Jules Wyvern" url="#" />
+                </div>
+                
                 
             </div>
         )
       
 }
 
+function LinkComponent (props) {
+    return <a href={props.url} class={props.class}>{props.content}</a>
+}
+
+function ImageComponent (props) {
+    return <img class={props.class} src={props.src} />
+}
+
 function MainTitle (props) {
-    return <h1 class={props.class}>{props.content}</h1>
+    return <h1 class={props.class}><LinkComponent class="item-title" url="#" content={props.content} /></h1>
 }
 
 
