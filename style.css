@@ -3,6 +3,15 @@
 
 body {
     background-color: hsl(217, 54%, 11%);
+    color: hsl(0, 0%, 100%);
+    
+}
+
+#app {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 hr {
@@ -120,3 +129,5 @@ div.info {
     font-size: 18px;
     
 }
+
+
