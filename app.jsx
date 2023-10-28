@@ -25,7 +25,7 @@ function AppContent() {
                 </div>
                 <hr />
                 <div class="creator">
-                    <ImageComponent src="images/image-avatar.png" class="avatar" />
+                    <ImageComponent src="images/image-avatar.png" class="avatar" alt="avatar" />
                     <Paragraph content="Creation of " class="info creator" />
                     <LinkComponent class="creator-link" content="Jules Wyvern" url="#" />
                 </div>
@@ -41,7 +41,7 @@ function LinkComponent (props) {
 }
 
 function ImageComponent (props) {
-    return <img class={props.class} src={props.src} />
+    return <img class={props.class} src={props.src} alt={props.alt} />
 }
 
 function MainTitle (props) {
@@ -54,7 +54,7 @@ function Paragraph (props) {
 }
 
 function NftImage (props) {
-    return(<img src="images\image-equilibrium.jpg" alt="nft-image" class={props.class} />)
+    return(<img src="images/image-equilibrium.jpg" alt="nft-image" class={props.class} />)
 }
 
 ReactDOM.render(<AppContent />, app)
