@@ -30,6 +30,36 @@ a:hover {
     border-radius: 20px;
 }
 
+.image-wrapper {
+    position: relative;
+}
+
+.overlay {
+    display: none;
+}
+
+.image-wrapper:hover > .overlay {
+    position: absolute;
+    display: flex;
+    inset: 0;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    animation-name: fade-in;
+    animation-duration: 0.25s;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fade-in {
+    from {
+        display: none;
+    }
+    to {
+        background-color: hsla(178, 100%, 50%, 50%);
+    }
+}
+
 img.item-image {
     border-radius: 10px;
     width: 100%;
