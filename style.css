@@ -98,6 +98,7 @@ div.info {
 
 .price {
     color: hsl(178, 100%, 50%);
+    font-weight: 600;
     /* display: inline; */
 }
 
